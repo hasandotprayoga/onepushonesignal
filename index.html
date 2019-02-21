@@ -13,6 +13,12 @@
         OneSignal.init({
           appId: "0968b630-89d8-4c35-b7ab-841af6dfcecb",
         });
+        OneSignal.sendTags({
+            userId: 'hasandotprayoga'
+          }).then(function(tagsSent) {
+            // Callback called when tags have finished sending
+            console.log(tagsSent);   
+          });
       });
     </script>
 </head>
